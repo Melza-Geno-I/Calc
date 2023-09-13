@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9cd256b78.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator ">
+            <div class="display">
+            <input  class="inputBox" id="inputBox" type="text" maxlength="21" >
+            <div class="output" maxlength="21"></div>
+        </div>
+            <div class="button-body">
+            <div class="buttons">
+                <button  id="mode" class="button spl-button fa-solid fa-moon " onclick="chMode()" ></button>
+                <!-- <i class="fa-solid fa-moon"></i> -->
+                <button class="button spl-button">AC</button>
+                <!-- <i class="fa-solid fa-rotate-right fa-flip-horizontal"></i> -->
+                <button class="button spl-button">DEL</button>
+                <!-- <i class="fa-solid fa-delete-left"></i> -->
+                <button class="button eql" style="background-color: rgb(29, 183, 255); color: white;">=</button>
+                <!-- <i class="fa-solid fa-equals" ></i> -->
+            </div>
+            <div class="buttons">
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button spl-button" >%</button>
+                <!-- <i class="fa-solid fa-percent"></i> -->
+            </div>
+            <div class="buttons">
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button spl-button" >/</button>
+                <!-- <i class="fa-solid fa-divide"></i> -->
+            </div>
+            <div class="buttons">
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button spl-button" >*</button>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+            </div>
+            <div class="buttons">
+                <button class="button">0</button>
+                <button class="button spl-button" >.</button>
+                <!-- <i class="fa-solid fa-circle fa-2xs" style="font-size: 5px;"></i> -->
+                <button class="button spl-button" >+</button>
+                <!-- <i class="fa-solid fa-plus"></i> -->
+                <button class="button spl-button" >-</button>
+                <!-- <i class="fa-solid fa-minus"></i> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

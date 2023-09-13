@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Poppins:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500;1,700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./image/pexels-steve-johnson-18124427.jpg);
+    background-size: cover;
+    user-select: none;
+}
+
+.calculator{
+        border: 5px solid transparent;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin:1rem ;
+        background-color:rgb(240, 192, 113);
+        
+    .display{
+            width: 100%;
+            height: 100px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            text-align: right;
+            color:rgb(109, 109, 109);
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+    }
+    .inputBox{
+        margin: .5rem ;
+        text-align: right;
+        font-size: larger;
+        border: none;
+        color:rgb(109, 109, 109);
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        right: 2rem;
+    }
+    .output{
+        margin: .5rem ;
+        font-size: xx-large;
+        color: black;
+    }
+    .button{
+        margin: .4rem;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 18px;
+        background-color:rgb(255, 255, 255) ;
+        color: rgb(248, 176, 51) ;
+        font-weight: 700; 
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        .eql:active{
+            transition: .1s;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        }
+    }
+    .spl-button{
+        background-color: rgb(226, 161, 32) ; 
+        color:white;
+    }  
+    .button:active{
+        transition: .1s;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+    }
+}
+
+.button-body{
+        border:2px soldid rgb(0, 0, 0);
+        border-radius: 5px;
+        margin-top: .7rem;
+}
+
+
+/* ----------------------dark mode--------------------- */
+
+
+.container.dark-mode{
+    .calculator{
+        background-color:rgb(40, 40, 40) ;
+        color: rgb(238, 237, 237);
+        .display{
+                background-color: rgb(30, 30, 30);
+                color: white;
+        }
+        .inputBox{
+            background-color: rgb(30, 30, 30);
+            border: none;
+            color: rgb(205, 205, 205);
+            cursor: pointer;
+        }
+        .output{
+            color: rgb(255, 255, 255);
+        }
+        .button{
+            background-color: rgb(89, 89, 89);
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 5px 0px, rgba(0, 0, 0, 0.15) 0px 3px 7px 3px;
+            .eql:active{
+                transition: .1s ;
+                box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            }
+        
+        }
+        .button:active{
+            transition: .1s ;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        }
+        .spl-button{
+            background-color: rgb(57, 57, 57);
+           
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 5px 0px, rgba(0, 0, 0, 0.15) 0px 3px 7px 3px;
+        }
+    
+    }   
+    }
+    
+    
+
+
+
+
+
+
